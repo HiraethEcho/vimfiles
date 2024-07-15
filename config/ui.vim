@@ -1,3 +1,3 @@
-set background=light
+" set background=light
 set termguicolors
 colorscheme atom

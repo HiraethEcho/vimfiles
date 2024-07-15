@@ -8,27 +8,13 @@
     "`"
   ],
   "coc.preferences.extensionUpdateCheck": "weekly",
-  "session.directory": "D:/Hiraeth/nvim-data/session",
   "snippets.shortcut": "Snip",
   "snippets.ultisnips.directories": [
     "UltiSnips",
-    "MySnips"
   ],
   "suggest.noselect": true,
   "suggest.enablePreselect": false,
   "explorer.presets": {
-     "hiraeth": {
-      "root-uri": "D:/Hiraeth"
-     },
-     "github": {
-      "root-uri": "D:/Github"
-     },
-     "nvim": {
-      "root-uri": "~/AppData/Local/nvim"
-     },
-     "buffer": {
-      "sources": [{"name": "buffer", "expand": true}]
-     },
     "floating": {
       "sources": [
         {
@@ -42,12 +28,6 @@
       ],
       "open-action-strategy": "sourceWindow"
       },
-    "Projects":{
-      "root-uri": "D:/Documents/Projects"
-    },
-    "Documents":{
-      "root-uri": "D:/Documents"
-    }
     },
   "explorer.quitOnOpen":false,
   "explorer.sources": [
@@ -83,25 +63,24 @@
   "explorer.keyMappings.global": {
     "i": false,
 
-    "*": "toggleSelection",
-    "<tab>": "actionMenu",
+    "<space>": "toggleSelection",
 
-    "gk": ["wait", "expandablePrev"],
-    "gj": ["wait", "expandableNext"],
     "h": ["wait", "collapse"],
     "l": ["wait", "expandable?", "expand", "open"],
+    "<bs>": ["wait", "gotoParent"],
+
     "<C-j>": ["wait", "toggleSelection", "normal:j"],
     "<C-k>": ["wait", "toggleSelection", "normal:k"],
-    "gl": ["wait", "expand:recursive"],
-    "gh": ["wait", "collapse:recursive"],
+
     "<2-LeftMouse>": ["expandable?", ["expanded?", "collapse", "expand"], "open"],
-    "o": ["wait", "expanded?", "collapse", "expand"],
     "<cr>": ["wait", "expandable?", "cd", "open"],
-    "e": "open",
+
+    "<tab>": "actionMenu",
+
     "s": "open:split",
     "v": "open:vsplit",
     "t": "open:tab",
-    "<bs>": ["wait", "gotoParent"],
+
     "gs": ["wait", "reveal:select"],
     "il": "preview:labeling",
     "ic": "preview:content",
@@ -112,24 +91,24 @@
     "yp": "copyFilepath",
     "yn": "copyFilename",
     "yy": "copyFile",
-    "dd": "cutFile",
+    "x": "cutFile",
     "p": "pasteFile",
-    "df": "delete",
-    "dF": "deleteForever",
+    "dd": "delete",
+    "dD": "deleteForever",
 
     "a": "addFile",
     "A": "addDirectory",
+
     "r": "rename",
 
     "zh": "toggleHidden",
-    "g.": "toggleHidden",
-    "R": "refresh",
 
+    "R": "refresh",
     "?": "help",
     "q": "quit",
     "<esc>": "quit",
-    "x": "systemExecute",
-    "gd": "listDrive",
+
+    "o": "systemExecute",
 
     "f": "search",
     "F": "searchRecursive",

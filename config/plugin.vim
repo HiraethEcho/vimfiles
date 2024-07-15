@@ -14,4 +14,4 @@ call plug#end()
 "
 " source $XDG_CONFIG_HOME/vim/config/utils.vim
 source $XDG_CONFIG_HOME/vim/config/coc.vim
-source $XDG_CONFIG_HOME/vim/config/finder.vim
+source $XDG_CONFIG_HOME/vim/config/file.vim
