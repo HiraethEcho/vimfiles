@@ -1,3 +1,4 @@
+" wilder
 call wilder#setup({
        \ 'modes': [':', '/', '?'],
        \ 'next_key': '<Tab>',
@@ -9,3 +10,7 @@ call wilder#set_option('renderer', wilder#renderer_mux({
        \ ':': wilder#popupmenu_renderer(),
        \ '/': wilder#wildmenu_renderer(),
        \ }))
+
+" undotree
+let g:undotree_WindowLayout=2
+nnoremap U :UndotreeToggle<cr>

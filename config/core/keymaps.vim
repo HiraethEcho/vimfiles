@@ -1,13 +1,14 @@
 let mapleader=" "
 
-nnoremap <leader>ev :e $MYVIMRC<CR>
 
 nnoremap <F5> :w<CR> :source $MYVIMRC<CR>
 nnoremap <F4> :PlugInstall<CR>
+nnoremap <F3> :e $MYVIMRC<CR>
 
 nnoremap <C-s>    :w<CR>
 nnoremap <leader>q :wqa<CR>
 nnoremap Q :q<CR>
+nnoremap <esc> :noh<cr><esc>
 
 nnoremap x "_x
 vnoremap x "_x

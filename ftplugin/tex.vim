@@ -1,7 +1,3 @@
-call plug#begin(expand("$XDG_CONFIG_HOME"). "/vim/plugged")
-Plug 'lervag/vimtex'
-call plug#end()
-
 let g:tex_flavor = 'latex'      " 设置 Tex 文档是 LaTeX 语法风格的文档：
 let g:vimtex_quickfix_mode = 0 " 设置不自动弹出报错窗口，可以通过 :copen 来手动打开
 " 设置预览 PDF 的工具是 sumatra 阅读器

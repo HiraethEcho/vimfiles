@@ -91,9 +91,8 @@
     "yp": "copyFilepath",
     "yn": "copyFilename",
     "yy": "copyFile",
-    "x": "cutFile",
+    "dd": "cutFile",
     "p": "pasteFile",
-    "dd": "delete",
     "dD": "deleteForever",
 
     "a": "addFile",

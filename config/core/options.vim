@@ -17,8 +17,6 @@ set shiftwidth=2  " 设置tab键和自动缩进
 set softtabstop=2 " 设置显示行尾的空格和制表符/空格和tab的样式
 set expandtab     " expand tab to space
 
-set list
-set listchars=eol:¬,trail:·,
 set autoindent " 自动缩进/下一行和上一行的格式相同
 set cindent
 
@@ -33,12 +31,6 @@ set ignorecase         " 搜索忽略大小写
 set smartcase          "只有一个大写字母的搜索词，将大小写敏感；其他情况都是写不敏感
 set showmatch          " 高亮显示匹配的括号
 
-set showmode           " 在底部显示，当前处于命令模式还是插入模式
-set showcmd            " 命令模式下，在底部显示，当前键入的指令
-" set showtabline=1      "  only if there are at least two tab pages
-" set laststatus=3      " always and ONLY the last window
-" set number
-" set relativenumber
 
 set splitbelow
 set splitright "在被分割的窗口间显示空白，便于阅读
