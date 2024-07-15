@@ -1,5 +1,5 @@
 
-let g:coc_global_extensions=['coc-snippets','coc-json', 'coc-marketplace','coc-lists','coc-pairs']
+let g:coc_global_extensions=['coc-snippets','coc-json', 'coc-marketplace','coc-lists','coc-pairs', 'coc-explorer']
 " let g:coc_node_path = 'D:\Program\scoop\apps\nodejs\current\node.exe'
 " Use `[g` and `]g` to navigate diagnostics
 " Use `:CocDiagnostics` to get all diagnostics of current buffer in location list.
@@ -22,22 +22,24 @@ inoremap <silent><expr> <C-o> coc#refresh()
 vnoremap <BS> <Plug>(coc-snippets-select)
 
 " Show all diagnostics.
-nnoremap <silent><nowait> <leader>la : <C-u>CocList diagnostics<cr>
+nnoremap <silent><nowait> <leader>id : <C-u>CocList diagnostics<cr>
 " Manage extensions.
 nnoremap <silent><nowait> <leader>le : <C-u>CocList extensions<cr>
 " Show commands.
-nnoremap <silent><nowait> <leader>lc : <C-u>CocList --normal commands<cr>
+nnoremap <silent><nowait> <leader>: : <C-u>CocList --normal commands<cr>
 " Find symbol of current document.
-nnoremap <silent><nowait> <leader>lo : <C-u>CocList outline<cr>
+nnoremap <silent><nowait> <leader>o : <C-u>CocList outline<cr>
+
 " Search workspace symbols.
-nnoremap <silent><nowait> <leader>ls : <C-u>CocList -I symbols<cr>
+" nnoremap <silent><nowait> <leader>ls : <C-u>CocList -I symbols<cr>
 " Resume latest coc list.
-nnoremap <silent><nowait> <leader>ll : <C-u>CocListResume<CR>
+" nnoremap <silent><nowait> <leader>ll : <C-u>CocListResume<CR>
+
 " Show Typos
-nnoremap <silent><nowait> <leader>lt : <c-u>CocList typos<CR>
+" nnoremap <silent><nowait> <leader>lt : <c-u>CocList typos<CR>
 " Show registers
-nnoremap <silent><nowait> <leader>lr :<c-u>CocList registers<CR>
+nnoremap <silent><nowait> <leader>" :<c-u>CocList registers<CR>
 " show yank list
-nnoremap <silent><nowait> <leader>li :<C-u>CocList yank<cr>
+" nnoremap <silent><nowait> <leader>li :<C-u>CocList yank<cr>
 " Show all lists
 nnoremap <silent><nowait> <leader>ll :<c-u>CocList lists<CR>
