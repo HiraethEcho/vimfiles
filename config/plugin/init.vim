@@ -24,3 +24,5 @@ source $XDG_CONFIG_HOME/vim/config/plugin/file.vim
 source $XDG_CONFIG_HOME/vim/config/plugin/motion.vim
 " comment, sandwicn
 source $XDG_CONFIG_HOME/vim/config/plugin/edit.vim
+" gitgutter
+source $XDG_CONFIG_HOME/vim/config/plugin/git.vim

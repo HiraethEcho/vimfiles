@@ -2,7 +2,7 @@ let g:tex_flavor = 'latex'      " 设置 Tex 文档是 LaTeX 语法风格的文�
 let g:vimtex_quickfix_mode = 0 " 设置不自动弹出报错窗口，可以通过 :copen 来手动打开
 " 设置预览 PDF 的工具是 sumatra 阅读器
 " let g:vimtex_view_general_viewer = 'SumatraPDF'
-" let g:vimtex_view_general_viewer = 'sioyek'
+let g:vimtex_view_general_viewer = 'sioyek'
 " let g:vimtex_view_general_options='-reuse-instance -forward-search @tex @line @pdf'
 " 设置 LaTeX 编译器
 let g:vimtex_compiler_latexmk = {

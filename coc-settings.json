@@ -9,9 +9,7 @@
   ],
   "coc.preferences.extensionUpdateCheck": "weekly",
   "snippets.shortcut": "Snip",
-  "snippets.ultisnips.directories": [
-    "UltiSnips",
-  ],
+  "snippets.ultisnips.directories":  "UltiSnips",
   "suggest.noselect": true,
   "suggest.enablePreselect": false,
   "explorer.presets": {
@@ -92,7 +90,7 @@
     "yn": "copyFilename",
     "yy": "copyFile",
     "dd": "cutFile",
-    "p": "pasteFile",
+    "pp": "pasteFile",
     "dD": "deleteForever",
 
     "a": "addFile",

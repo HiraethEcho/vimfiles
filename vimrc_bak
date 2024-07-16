@@ -129,62 +129,12 @@ nnoremap <F4> : PlugInstall<CR>
 nnoremap <C-s>    : w<CR>
 nnoremap <C-a> mzggVG
 
-nnoremap Q    : q<CR>
-nnoremap U <C-r>
-let mapleader=" "
-vnoremap D "_d
-nnoremap D "_d
-nnoremap DD V"_d
-nnoremap x "_x
-vnoremap x "_x
-" inoremap <C-v> <Esc>"+pa
-" nnoremap <leader>lg :tabe<cr>:term lazygit<cr>i
-" nnoremap <leader>vs :!code .<cr>
-" }}} general "
-" Move {{{
-nnoremap <silent> k gk
-nnoremap <silent> j gj
-nnoremap <silent> K 5k
-nnoremap <silent> J 5j
-nnoremap H ^
-nnoremap L $
-vnoremap H ^
-vnoremap L $
 "move in insert mode
 inoremap <M-h> <left>
 inoremap <M-j> <down>
 inoremap <M-k> <up>
 inoremap <M-l> <right>
-" inoremap <M-w> <Esc>wa
-" inoremap <M-e> <Esc>ea
-" inoremap <M-b> <Esc>ba
-" inoremap <M-W> <Esc>Wa
-" inoremap <M-E> <Esc>Ea
-" inoremap <M-B> <Esc>Ba
-" inoremap <M-H> <Esc>^i
-" inoremap <M-L> <End>a
-" }}}
-" Windows and tabs{{{
-"buffers
-" nnoremap <leader><tab> :bn<CR>
-" nnoremap <leader><S-tab> :bp<CR>
-" 调整窗口大小
-nnoremap <M-up> :res +5<CR>
-nnoremap <M-down> :res -5<CR>
-nnoremap <M-left> :vertical resize-5<CR>
-nnoremap <M-right> :vertical resize+5<CR>
-"移动到相应窗口
-nnoremap <tab> <C-w>w
-nnoremap <A-l> <C-w>l
-nnoremap <A-k> <C-w>k
-nnoremap <A-h> <C-w>h
-nnoremap <A-j> <C-w>j
-" 移动当前窗口
-nnoremap <A-L> <C-w>L
-nnoremap <A-K> <C-w>K
-nnoremap <A-H> <C-w>H
-nnoremap <A-J> <C-w>J
-nnoremap <C-n> <C-W>T
+
 " Rotate screens
 nnoremap rh <C-w>b<C-w>K
 nnoremap rv <C-w>b<C-w>H
@@ -250,21 +200,6 @@ Plug 'preservim/nerdtree'
 " Plug 'kazhala/close-buffers.nvim'
 call plug#end()
 "}}}
-"Plug settings{{{ 
-"themes{{{ 
-" airline {{{ "
-let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#left_sep = ''
-let g:airline#extensions#tabline#left_alt_sep = ''
-let g:airline#extensions#tabline#formatter = 'unique_tail'
-let g:airline#extensions#tabline#buffer_nr_show = 1        "显示buffer编号
-let g:airline#extensions#tabline#buffer_nr_format = '%s:'
-let g:airline#extensions#battery#enabled = 1
-let g:airline_left_sep = ''
-let g:airline_left_alt_sep = ''
-let g:airline_theme='onedark' 
-" }}} airline "
-"}}}
 "coc settings {{{
 " general {{{ "
 " let g:coc_global_extensions=['coc-snippets','coc-json','coc-typos','coc-vimlsp','coc-marketplace','coc-lists','coc-pairs','coc-explorer','coc-yank','coc-word','coc-dictionary']
@@ -324,52 +259,7 @@ nnoremap <silent><nowait> <leader>li :<C-u>CocList yank<cr>
 nnoremap <silent><nowait> <leader>ll :<c-u>CocList lists<CR>
 "  }}}
 " }}}
-" Directors {{{
-  " bookmarks {{{ "
-    " let g:bookmark_no_default_key_mappings = 1
-    " nmap <Leader>mm <Plug>BookmarkToggle
-    " nmap <Leader>mi <Plug>BookmarkAnnotate
-    " nmap <Leader>ma <Plug>BookmarkShowAll
-    " nmap <Leader>mj <Plug>BookmarkNext
-    " nmap <Leader>mk <Plug>BookmarkPrev
-    " nmap <Leader>mc <Plug>BookmarkClear
-    " nmap <Leader>mx <Plug>BookmarkClearAll
-    " nmap <Leader>mK <Plug>BookmarkMoveUp
-    " nmap <Leader>mJ <Plug>BookmarkMoveDown
-
-    "signature {{{ "
-    " let g:SignatureMap = {
-    "   \ 'Leader'             :  "m",
-    "   \ 'PlaceNextMark'      :  "m,",
-    "   \ 'ToggleMarkAtLine'   :  "m.",
-    "   \ 'PurgeMarksAtLine'   :  "m-",
-    "   \ 'DeleteMark'         :  "dm",
-    "   \ 'PurgeMarks'         :  "m<Space>",
-    "   \ 'PurgeMarkers'       :  "m<BS>",
-    "   \ 'GotoNextLineAlpha'  :  "']",
-    "   \ 'GotoPrevLineAlpha'  :  "'[",
-    "   \ 'GotoNextSpotAlpha'  :  "`]",
-    "   \ 'GotoPrevSpotAlpha'  :  "`[",
-    "   \ 'GotoNextLineByPos'  :  "]'",
-    "   \ 'GotoPrevLineByPos'  :  "['",
-    "   \ 'GotoNextSpotByPos'  :  "]`",
-    "   \ 'GotoPrevSpotByPos'  :  "[`",
-    "   \ 'GotoNextMarker'     :  "]-",
-    "   \ 'GotoPrevMarker'     :  "[-",
-    "   \ 'GotoNextMarkerAny'  :  "]=",
-    "   \ 'GotoPrevMarkerAny'  :  "[=",
-    "   \ 'ListBufferMarks'    :  "m/",
-    "   \ 'ListBufferMarkers'  :  "m?"
-    "   \ }
-    " }}} signature "
-  " }}} bookmarks "
-" }}}
 " editor {{{ "
-" markdown {{{
-let g:vim_markdown_math = 1
-let g:vmt_auto_update_on_save = 0
-nnoremap <leader>md <Plug>MarkdownPreviewToggle
-" }}} "
 "vimtex{{{
 let g:tex_flavor = 'latex'      " 设置 Tex 文档是 LaTeX 语法风格的文档：
 let g:vimtex_quickfix_mode = 0 " 设置不自动弹出报错窗口，可以通过 :copen 来手动打开
