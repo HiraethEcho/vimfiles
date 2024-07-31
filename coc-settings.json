@@ -10,23 +10,8 @@
   "coc.preferences.extensionUpdateCheck": "weekly",
   "snippets.shortcut": "Snip",
   "snippets.ultisnips.directories":  "UltiSnips",
-  "suggest.noselect": true,
+  "suggest.noselect": false,
   "suggest.enablePreselect": false,
-  "explorer.presets": {
-    "floating": {
-      "sources": [
-        {
-          "name": "buffer",
-          "expand": true
-        },
-        {
-          "name": "file",
-          "expand": true
-        }
-      ],
-      "open-action-strategy": "sourceWindow"
-      },
-    },
   "explorer.quitOnOpen":false,
   "explorer.sources": [
     {

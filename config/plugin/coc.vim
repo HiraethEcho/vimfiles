@@ -9,6 +9,7 @@ inoremap <silent><expr> <tab>
 inoremap <expr><S-TAB> coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"
 inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm()
       \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
+
 function! CheckBackspace() abort
   let col = col('.') - 1
   return !col || getline('.')[col - 1]  =~# '\s'
@@ -25,7 +26,7 @@ nnoremap <silent> ]g <Plug>(coc-diagnostic-next)
 nnoremap <silent><nowait> <leader>o : <C-u>CocList outline<cr>
 
 " enhance natives
-nnoremap <silent><nowait> <leader>: : <C-u>CocList --normal commands<cr>
+" nnoremap <silent><nowait> <leader>: : <C-u>CocList --normal commands<cr>
 nnoremap <silent><nowait> <leader>" :<c-u>CocList registers<CR>
 nnoremap <silent><nowait> <leader>' :<c-u>CocList markers<CR>
 nnoremap <silent><nowait> <leader>ih :<c-u>CocList helptags<CR>

@@ -8,10 +8,13 @@ nnoremap <F3> :e $MYVIMRC<CR>
 nnoremap <C-s>    :w<CR>
 nnoremap <leader>q :wqa<CR>
 nnoremap Q :q<CR>
-nnoremap <esc> :noh<cr><esc>
+nnoremap <esc> <esc>:noh<cr>
 
 nnoremap x "_x
 vnoremap x "_x
+
+nnoremap Y "+y
+vnoremap Y "+y
 
 nnoremap <silent> k gk
 nnoremap <silent> j gj
@@ -23,8 +26,8 @@ vnoremap L $
 
 nnoremap <C-up> :res +5<CR>
 nnoremap <C-down> :res -5<CR>
-nnoremap <C-left> :vertical resize-5<CR>
-nnoremap <C-right> :vertical resize+5<CR>
+nnoremap <C-left> :vertical resize-2<CR>
+nnoremap <C-right> :vertical resize+2<CR>
 
 nnoremap <C-l> <C-w>l
 nnoremap <C-k> <C-w>k

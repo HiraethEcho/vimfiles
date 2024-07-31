@@ -2,7 +2,7 @@
 set scrolloff=3 " 移动到顶部或底部的时候保持5行距离
 set cursorline
 
-set clipboard+=unnamedplus
+set clipboard=unnamed
 " set mouse=a
 
 set nobackup
