@@ -1,6 +1,7 @@
 " set background=light
 set termguicolors
-colorscheme atom
+colorscheme nord
+
 
 " cursor
 " INSERT mode

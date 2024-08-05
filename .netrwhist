@@ -1,5 +1,8 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =3
+let g:netrw_dirhistcnt =6
+let g:netrw_dirhist_6='/home/hiraeth/.config/vim/config/core'
+let g:netrw_dirhist_5='/home/hiraeth/.config/vim/config'
+let g:netrw_dirhist_4='/home/hiraeth/.config/vim'
 let g:netrw_dirhist_3='/home/hiraeth/Documents/flop'
 let g:netrw_dirhist_2='/home/hiraeth/.config/vim'
 let g:netrw_dirhist_1='/home/hiraeth/.config/nvim'
