@@ -35,5 +35,5 @@ nnoremap <silent><nowait> <leader>ih :<c-u>CocList helptags<CR>
 " nnoremap <silent><nowait> <leader>ll : <C-u>CocListResume<CR>
 
 " lists
-nnoremap <silent><nowait> <leader>ll :<c-u>CocList lists<CR>
-nnoremap <silent><nowait> <leader>le : <C-u>CocList extensions<cr>
+nnoremap <silent><nowait> <leader>il :<c-u>CocList lists<CR>
+nnoremap <silent><nowait> <leader>ie : <C-u>CocList extensions<cr>

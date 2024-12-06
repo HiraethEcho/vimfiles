@@ -2,7 +2,6 @@
 set termguicolors
 colorscheme nord
 
-
 " cursor
 " INSERT mode
 let &t_SI = "\<Esc>[5 q"
