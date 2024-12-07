@@ -15,7 +15,7 @@ function! CheckBackspace() abort
   return !col || getline('.')[col - 1]  =~# '\s'
 endfunction
 inoremap <silent><expr> <C-o> coc#refresh()
-vnoremap <BS> <Plug>(coc-snippets-select)
+vnoremap <TAB> <Plug>(coc-snippets-select)
 
 "diagnostics.
 nnoremap <silent><nowait> <leader>id : <C-u>CocList diagnostics<cr>
