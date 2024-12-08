@@ -9,3 +9,4 @@ pythonx/__pycache__/*
 *.out
 *.xdv
 *.fdb_latexmk
+.netrwhist

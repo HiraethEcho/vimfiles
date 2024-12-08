@@ -40,8 +40,9 @@ nnoremap <C-j> <C-w>j
 " nnoremap <C-J> <C-w>J
 
 nnoremap <C-n> <C-W>T
-
 nnoremap <C-t> <Esc>:tabnew<CR>
+nnoremap t :tabn<cr>
+nnoremap T :tabp<cr>
 
 " === command mode=====
 nnoremap ; :

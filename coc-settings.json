@@ -9,7 +9,6 @@
   ],
   "coc.preferences.extensionUpdateCheck": "weekly",
   "snippets.shortcut": "Snip",
-  "snippets.ultisnips.directories":  "UltiSnips",
   "suggest.noselect": false,
   "suggest.enablePreselect": false,
   "explorer.quitOnOpen":false,
@@ -45,73 +44,36 @@
   "explorer.buffer.showHiddenBuffers": true,
   "explorer.keyMappings.global": {
     "i": false,
-
     "<space>": "toggleSelection",
-
     "h": ["wait", "collapse"],
     "l": ["wait", "expandable?", "expand", "open"],
     "<bs>": ["wait", "gotoParent"],
-
-    "<C-j>": ["wait", "toggleSelection", "normal:j"],
-    "<C-k>": ["wait", "toggleSelection", "normal:k"],
-
     "<2-LeftMouse>": ["expandable?", ["expanded?", "collapse", "expand"], "open"],
     "<cr>": ["wait", "expandable?", "cd", "open"],
-
     "<tab>": "actionMenu",
-
     "s": "open:split",
     "v": "open:vsplit",
     "t": "open:tab",
-
-    "gs": ["wait", "reveal:select"],
-    "il": "preview:labeling",
-    "ic": "preview:content",
-    "Il": "previewOnHover:toggle:labeling",
-    "Ic": "previewOnHover:toggle:content",
-    "II": "previewOnHover:disable",
-
+    "P": "previewOnHover:toggle:content",
     "yp": "copyFilepath",
-    "yn": "copyFilename",
+    "yf": "copyFilename",
     "yy": "copyFile",
-    "dd": "cutFile",
-    "pp": "pasteFile",
-    "dD": "deleteForever",
-
+    "x": "cutFile",
+    "p": "pasteFile",
+    "d": "delete",
+    "D": "deleteForever",
     "a": "addFile",
     "A": "addDirectory",
-
     "r": "rename",
-
     "zh": "toggleHidden",
-
     "R": "refresh",
     "?": "help",
     "q": "quit",
     "<esc>": "quit",
-
     "o": "systemExecute",
-
     "f": "search",
-    "F": "searchRecursive",
-
     "gf": "gotoSource:file",
-    "gb": "gotoSource:buffer",
-
-    "[[": ["wait", "sourcePrev"],
-    "]]": ["wait", "sourceNext"],
-    "[i": ["wait", "indentPrev"],
-    "]i": ["wait", "indentNext"],
-    "[m": ["wait", "markPrev:modified"],
-    "]m": ["wait", "markNext:modified"],
-    "[d": ["wait", "markPrev:diagnosticError:diagnosticWarning"],
-    "]d": ["wait", "markNext:diagnosticError:diagnosticWarning"],
-    "[D": ["wait", "markPrev:diagnosticError"],
-    "]D": ["wait", "markNext:diagnosticError"],
-    "[c": ["wait", "markPrev:git"],
-    "]c": ["wait", "markNext:git"],
-    "<<": "gitStage",
-    ">>": "gitUnstage"
+    "gb": "gotoSource:buffer"
   },
   "snippets.ultisnips.pythonPrompt": false
 }

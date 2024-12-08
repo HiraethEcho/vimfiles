@@ -33,8 +33,8 @@ noremap <leader>fo :<C-U><C-R>=printf("Leaderf mru %s", "")<CR><CR>
 noremap <leader>j :<C-U><C-R>=printf("Leaderf jumps %s", "")<CR><CR>
 noremap <leader>fq :<C-U><C-R>=printf("Leaderf quickfix %s", "")<CR><CR>
 
-noremap <leader>/ :<C-U>Leaderf rg --current-buffer<CR>
-noremap <leader>? :<C-U>Leaderf rg<CR>
+" noremap <leader>/ :<C-U>Leaderf rg --current-buffer<CR>
+noremap <leader>/ :<C-U>Leaderf rg<CR>
 
 " search visually selected text literally
 xnoremap gf :<C-U><C-R>=printf("Leaderf! rg -F -e %s ", leaderf#Rg#visual())<CR>
