@@ -1,7 +1,9 @@
 " Coc explorer 
-nnoremap <silent><nowait> <leader>e : <C-u>CocCommand explorer<cr>
+" nnoremap <silent><nowait> <leader>e : <C-u>CocCommand explorer<cr>
 
+" let NERDTreeShowHidden=.
 " leaderF
+nnoremap <leader>e :NERDTreeToggle<CR>
 let g:Lf_WorkingDirectoryMode = 'Ac'
 " popup mode
 let g:Lf_WindowPosition = 'popup'

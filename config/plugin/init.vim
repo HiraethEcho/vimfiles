@@ -16,6 +16,8 @@ Plug 'plasticboy/vim-markdown'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npm install'}
 " Plug 'liuchengxu/vim-which-key', { 'on': ['WhichKey', 'WhichKey!'] }
 Plug 'liuchengxu/vim-which-key'
+Plug 'mhinz/vim-startify'
+Plug 'preservim/nerdtree'
 call plug#end()
 
 " wilder, undotree, WhichKey

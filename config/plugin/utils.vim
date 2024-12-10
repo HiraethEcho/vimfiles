@@ -33,3 +33,12 @@ let g:which_key_map['w'] = {
       \ }
 
 call which_key#register('<Space>', "g:which_key_map")
+" startify
+"
+let g:startify_files_number = 3
+
+let g:startify_lists = [
+        \ { 'type': 'sessions',  'header': ['   Sessions']       },
+        \ { 'type': 'files',     'header': ['   MRU']            },
+        \ { 'type': 'commands',  'header': ['   Commands']       },
+        \ ]

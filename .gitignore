@@ -10,3 +10,5 @@ pythonx/__pycache__/*
 *.xdv
 *.fdb_latexmk
 .netrwhist
+session
+.netrwhist

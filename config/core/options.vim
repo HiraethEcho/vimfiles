@@ -9,6 +9,7 @@ set nobackup
 set hidden
 set noswapfile
 set noerrorbells
+set belloff=all
 set novisualbell
 set autoread  "开文件监视，如果编辑中文件发生外部改变就进行提示
 
