@@ -1,2 +1,2 @@
-source $HOME/.vim/config/core/init.vim
-source $HOME/.vim/config/plugin/init.vim
+source $HOME/vimfiles/config/core/init.vim
+source $HOME/vimfiles/config/plugin/init.vim

@@ -45,7 +45,10 @@ let g:vimtex_quickfix_ignore_filters = [
       \ 'Package hyperref Warning: Token not allowed in a PDF string',
       \]
 
-let g:vimtex_view_method = 'zathura'
+  let g:vimtex_view_general_viewer = 'SumatraPDF'
+  let g:vimtex_view_general_options
+      \ = '-reuse-instance -forward-search @tex @line @pdf'
+" let g:vimtex_view_method = 'zathura'
 " let g:vimtex_view_method = 'sioyek'
 " Don't automatically open PDF viewer after first compilation
 " let g:vimtex_view_automatic = 0

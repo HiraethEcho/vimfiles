@@ -1,4 +1,4 @@
-source $HOME/.vim/config/core/options.vim
-source $HOME/.vim/config/core/ui.vim
-source $HOME/.vim/config/core/autocmd.vim
-source $HOME/.vim/config/core/keymaps.vim
+source $HOME/vimfiles/config/core/options.vim
+source $HOME/vimfiles/config/core/ui.vim
+source $HOME/vimfiles/config/core/autocmd.vim
+source $HOME/vimfiles/config/core/keymaps.vim

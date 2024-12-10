@@ -1,4 +1,4 @@
-call plug#begin(expand("$HOME"). "/.vim/plugged")
+call plug#begin(expand("$HOME"). "/vimfiles/plugged")
 " Plug 'lervag/vimtex', {'for':[ 'tex' , 'bib' ]}
 Plug 'lervag/vimtex'
 Plug 'neoclide/coc.nvim', {'branch':'release'}
@@ -19,15 +19,15 @@ Plug 'liuchengxu/vim-which-key'
 call plug#end()
 
 " wilder, undotree, WhichKey
-source $HOME/.vim/config/plugin/utils.vim
+source $HOME/vimfiles/config/plugin/utils.vim
 " coc completement, lsp etc
-source $HOME/.vim/config/plugin/coc.vim
+source $HOME/vimfiles/config/plugin/coc.vim
 " coc-explorer, leaderF, sessions
-source $HOME/.vim/config/plugin/file.vim
+source $HOME/vimfiles/config/plugin/file.vim
 " easymotion
-" source $HOME/.vim/config/plugin/motion.vim
+" source $HOME/vimfiles/config/plugin/motion.vim
 " comment, sandwicn
-" source $HOME/.vim/config/plugin/edit.vim
+" source $HOME/vimfiles/config/plugin/edit.vim
 " gitgutter
-source $HOME/.vim/config/plugin/git.vim
-" source $HOME/.vim/config/plugin/vimtex.vim
+source $HOME/vimfiles/config/plugin/git.vim
+" source $HOME/vimfiles/config/plugin/vimtex.vim
