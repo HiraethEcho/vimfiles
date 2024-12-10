@@ -1,4 +1,4 @@
-let g:coc_global_extensions=['coc-snippets','coc-json', 'coc-marketplace','coc-lists','coc-pairs', 'coc-explorer']
+" let g:coc_global_extensions=['coc-snippets','coc-json', 'coc-marketplace','coc-lists','coc-pairs', 'coc-explorer']
 " let g:coc_node_path = 'D:\Program\scoop\apps\nodejs\current\node.exe'
 "
 inoremap <silent><expr> <tab>

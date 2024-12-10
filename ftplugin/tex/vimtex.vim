@@ -1,10 +1,10 @@
 " My configuration of the VimTeX plugin
 
 " Only load this plugin it has not yet been loaded for this buffer
-if exists("b:did_myvimtexsettings")
-  finish
-endif
-let b:did_myvimtexsettings = 1
+" if exists("b:did_myvimtexsettings")
+"   finish
+" endif
+" let b:did_myvimtexsettings = 1
 
 " map <leader>i :VimtexInfo<CR>
 
@@ -45,27 +45,14 @@ let g:vimtex_quickfix_ignore_filters = [
       \ 'Package hyperref Warning: Token not allowed in a PDF string',
       \]
 
-  let g:vimtex_view_general_viewer = 'SumatraPDF'
-  let g:vimtex_view_general_options
-      \ = '-reuse-instance -forward-search @tex @line @pdf'
+"  let g:vimtex_view_general_viewer = 'SumatraPDF'
+"  let g:vimtex_view_general_options
+"      \ = '-reuse-instance -forward-search @tex @line @pdf'
 " let g:vimtex_view_method = 'zathura'
 " let g:vimtex_view_method = 'sioyek'
 " Don't automatically open PDF viewer after first compilation
 " let g:vimtex_view_automatic = 0
 
-let g:vimtex_compiler_latexmk = {
-    \ 'build_dir' : '',
-    \ 'callback' : 1,
-    \ 'continuous' : 0,
-    \ 'executable' : 'latexmk',
-    \ 'hooks' : [],
-    \ 'options' : [
-    \   '-verbose',
-    \   '-file-line-error',
-    \   '-synctex=1',
-    \   '-interaction=nonstopmode',
-    \ ],
-    \}
 
 " let g:vimtex_toc_config = {
 "       \ 'name'         : 'TOC',
