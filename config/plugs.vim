@@ -21,15 +21,15 @@ Plug 'preservim/nerdtree'
 call plug#end()
 
 " wilder, undotree, WhichKey
-source $HOME/.vim/config/plugin/utils.vim
+" source $HOME/.vim/config/plugin/utils.vim
 " coc completement, lsp etc
-source $HOME/.vim/config/plugin/coc.vim
+" source $HOME/.vim/config/plugin/coc.vim
 " coc-explorer, leaderF, sessions
-source $HOME/.vim/config/plugin/file.vim
+" source $HOME/.vim/config/plugin/file.vim
 " easymotion
 " source $HOME/.vim/config/plugin/motion.vim
 " comment, sandwicn
 " source $HOME/.vim/config/plugin/edit.vim
 " gitgutter
-source $HOME/.vim/config/plugin/git.vim
+" source $HOME/.vim/config/plugin/git.vim
 " source $HOME/.vim/config/plugin/vimtex.vim

@@ -33,12 +33,21 @@ let g:which_key_map['w'] = {
       \ }
 
 call which_key#register('<Space>', "g:which_key_map")
-" startify
-"
-let g:startify_files_number = 3
 
+" startify
+let g:startify_files_number = 3
+let g:startify_session_dir = '$HOME/.vim/sessions'
 let g:startify_lists = [
         \ { 'type': 'sessions',  'header': ['   Sessions']       },
         \ { 'type': 'files',     'header': ['   MRU']            },
         \ { 'type': 'commands',  'header': ['   Commands']       },
         \ ]
+
+let g:startify_commands = [
+    \ {'U': 'PlugUpdate'},
+    \ {'I': 'PlugInstall'},
+    \ ]
+
+let g:startify_session_before_save = [ 'silent! tabdo NERDTreeClose' ]
+let g:startify_session_persistence = 1
+let g:startify_update_oldfiles = 1
